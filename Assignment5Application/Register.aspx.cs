@@ -49,21 +49,15 @@ namespace Assignment5Application
             if (password.Length == 0 || username.Length == 0 || confirmedPassword.Length == 0)
             {
                 ErrorLabel.Text = "All fields must be filled in!";
+                ErrorLabel.ForeColor = Color.Red;
                 return;
             }
-
-            //if (ImageVerifierTextbox.Text != randomString)
-            // {
-            //    ErrorLabel.Text = "The captcha was not correct";
-            //    ErrorLabel.ForeColor = Color.Red;
-            //    return;
-            //}
 
             string passwordEncrypted = new SuperTopSecreteEncryption().Encrypt(password);
 
             writeInNewMember(username, passwordEncrypted);
 
-            Response.Redirect("~/Member.aspx");
+            Response.Redirect("Member.aspx");
         }
 
         private void writeInNewMember(string username, string password)

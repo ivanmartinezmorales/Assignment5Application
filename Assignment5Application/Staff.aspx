@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Staff.aspx.cs" Inherits="Assignment5Application.WebForm1" %>
+=======
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="Assignment5Application.StaffPage" MasterPageFile="~/Site.Master"%>
+>>>>>>> 8f1619437c6e96bb401a2bba89a4d02854adc101
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="StaffPage" ContentPlaceHolderID="MainContent" runat="server">
     
     <div class ="container">
         <div class ="row">
