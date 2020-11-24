@@ -44,13 +44,13 @@
                         <td>C# Code behind GUI. Linked to the default page</td>
                     </tr>
                     <tr>
-                        <td>Ivan Martinez Morales</td>
+                        <td>Chris Canales</td>
                         <td>XML File</td>
                         <td>Stores usernames and passwords</td>
                         <td>Linked login page and the hashing function</td>
                     </tr>
                     <tr>
-                        <td>Ivan Martinez Morales</td>
+                        <td>Chris Canales</td>
                         <td>DLL</td>
                         <td>Hashing function: Input string: Output: String</td>
                         <td>Use library class and local component to iplement this library function.It is also used to save data to an XML file.</td>
