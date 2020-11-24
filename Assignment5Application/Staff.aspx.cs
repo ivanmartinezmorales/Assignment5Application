@@ -6,15 +6,39 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using SuperTopSecretEncryption;
 using System.Drawing;
+using System.Web.Security;
 
 namespace Assignment5Application
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class StaffPage : System.Web.UI.Page
     {
         private chrisService.Service1Client client;
         private ivanService.Assignment6ServiceClient client2;
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Check that our staff is logged in
+
+            try
+            {
+            HttpCookie retrievedCookie = Request.Cookies.Get("staff-cookie");
+
+            if (retrievedCookie == null)
+            {
+                Response.Redirect("StaffLogin.aspx");
+            }
+
+            if (FormsAuthentication.Decrypt(retrievedCookie.Value) == null)
+            {
+
+                Response.Redirect("StaffLogin.aspx");
+            }
+
+            }
+
+            catch (Exception)
+            {
+                Response.Redirect("StaffLogin.aspx");
+            }
 
         }
         protected void SubmitButton_Click(object sender, EventArgs e)

@@ -11,7 +11,7 @@ namespace Assignment5Application
 {
 
 
-    public partial class WebForm1
+    public partial class StaffPage
     {
 
         /// <summary>
