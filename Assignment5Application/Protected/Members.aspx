@@ -1,6 +1,74 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Members.aspx.cs" Inherits="Assignment5Application.Protected.Members" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Hi, <asp:LoginName runat="server" CssClass="username" />, welcome to the members page</h2>
-    <h3>Here are some things that you can do here:</h3>
-    <h1>TODO: Add the services here</h1>
+    
+    <div class ="container">
+        <div class ="row">
+            <div class="jumbotron col-lg-12">
+                <h1>Hi, <asp:LoginName runat="server" CssClass="username" />, welcome to the members page</h1>
+                
+            </div>
+        </div>
+        <div class ="row">
+            <div class="col-lg-4">
+                <h1>Finance</h1>
+                <h3>Search your stocks below</h3>
+                <br />
+                
+                <div class="row">
+                    <asp:TextBox ID="StockName" runat="server" class="form-control col-xs-10"></asp:TextBox>
+                    <asp:Button ID="SubmitButton" runat="server" OnClick="SubmitButton_Click" Text="Search" class="btn btn-info col-xs-2" />
+                </div>
+                
+                <h4>
+                    <asp:label ID="StockResponse" runat="server"></asp:label>
+                </h4>
+            </div>
+            <div class="col-lg-4">
+                <h1>Currency Conversion</h1>
+                <h3>Check what your USD is worth!</h3>
+                <br />
+                
+                <div class="row">
+                    <asp:TextBox ID="amountTextBox" runat="server" class="form-control col-xs-12"></asp:TextBox>
+                </div>
+                <div class="row">
+                    <br />
+                    <asp:Button ID="JPY" runat="server" OnClick="SubmitButton_Click3" Text="Yen" class="btn btn-info col-xs-3" />  
+                    <asp:Button ID="EUR" runat="server" OnClick="SubmitButton_Click3" Text="Eero" class="btn btn-info col-xs-3" />  
+                    <asp:Button ID="MXN" runat="server" OnClick="SubmitButton_Click3" Text="Peso" class="btn btn-info col-xs-3" />
+                </div>
+                <h3>
+                    <asp:label ID="conversionLabel" runat="server"></asp:label>
+                </h3>
+            </div>
+            <div class="col-lg-4">
+                <h1>Word of the Day</h1>
+                <h3>Search your own word below</h3>
+                <br />
+                
+                <div class="row">
+                    <asp:TextBox ID="aWordTextBox" runat="server" class="form-control col-xs-10"></asp:TextBox>
+                    <asp:Button ID="Button2" runat="server" OnClick="SubmitButton_Click2" Text="Search" class="btn btn-info col-xs-2" />
+                </div>
+                
+                <h4>
+                    <asp:label ID="wordDef" runat="server"></asp:label>
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class ="text-center col-xs-12">
+                <h1>News</h1>
+                <h3>Search News Based on your preference!</h3>
+                <br />                
+                    <asp:TextBox ID="TopicTextBox" runat="server" class="form-control center-block"></asp:TextBox>
+                <br /> 
+                    <asp:Button ID="getLocalNews" runat="server" OnClick="SubmitButton_Click4" Text="Search" class="btn btn-info  " />
+                <h4>
+                    <asp:label ID="theNewsLabel" runat="server"></asp:label>
+                </h4>
+            </div>
+        </div>
+    </div>
+    
 </asp:Content>
