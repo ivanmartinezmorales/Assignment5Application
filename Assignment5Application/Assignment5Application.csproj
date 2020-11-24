@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Staff.aspx" />
     <None Include="Connected Services\chrisService\configuration91.svcinfo" />
     <None Include="Connected Services\chrisService\configuration.svcinfo" />
     <None Include="Connected Services\chrisService\Reference.svcmap">
@@ -324,6 +325,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -90,7 +90,7 @@ namespace Assignment5Application
             if (loginSuccessful)
             {
                 FormsAuthentication.RedirectFromLoginPage(userProvidedUsername, Login1.RememberMeSet);
-                Response.Redirect("Protected/Staff.aspx");
+                Response.Redirect("/Staff.aspx");
             }
         }
     }
