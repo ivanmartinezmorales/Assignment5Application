@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1b68c8ed-cc4a-4782-9e2b-6fe6bee18eef" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3fd3389d-7aa0-45f6-845e-633bf9c679b1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="c3d370ee-8ea2-495d-b1a7-0adb51808b71" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?xsd=xsd2" />
-    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="d503c5a1-0314-460d-a989-929ffb1d92d9" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?wsdl" />
-    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="0f4a26d1-adf3-4270-9cdd-028677fa4ae0" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?xsd=xsd1" />
-    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="b640d3e1-82c5-4057-9614-ef799477b60d" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?disco" />
-    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="0a763d09-94e2-42d0-8e47-f425518fcb21" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="9c49f70c-c862-4dda-ba7c-8657cb31400d" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="9f3bfda3-2d67-49c9-ad4b-5ea805a0cfba" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?wsdl" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="6d324722-16f7-4fa7-a742-c8c80762ef07" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="75c82577-3349-4912-a862-5647383e133f" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?disco" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="dc029b16-b8a3-4fc9-9b9c-75b41fd0b1fc" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

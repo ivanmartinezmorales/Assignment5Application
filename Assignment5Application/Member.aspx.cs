@@ -4,15 +4,44 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
+using SuperTopSecretEncryption;
+using System.Drawing;
 
-namespace Assignment5Application.Protected
+namespace Assignment5Application
 {
-    public partial class Members : System.Web.UI.Page
+    public partial class Member : System.Web.UI.Page
     {
         private chrisService.Service1Client client;
         private ivanService.Assignment6ServiceClient client2;
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            try
+            {
+                // Check if the user is logged in 
+                HttpCookie retrievedCookie = Request.Cookies.Get("non-privileged-user-cookie");
+                // check if the cookie exists
+                if (retrievedCookie == null)
+                {
+                    Response.Redirect("Login.aspx");
+                }
+
+                var userInfo = FormsAuthentication.Decrypt(retrievedCookie.Value);
+
+                if (userInfo == null)
+                {
+                    // if the user info returned null, then shoot render the response page
+                    Response.Redirect("Login.aspx");
+                }
+
+                // now that we're out of the woods of smoketesting
+
+
+            } catch (Exception)
+            {
+                   Response.Redirect("Login.aspx");
+            }
 
         }
         protected void SubmitButton_Click(object sender, EventArgs e)
@@ -101,5 +130,57 @@ namespace Assignment5Application.Protected
             }
 
         }
+
+        protected void handleEncrypt(object sender, EventArgs e)
+        {
+            // okay so encrypt the text and make it appear on the screen
+            if (EncryptionTextbox.Text == "")
+            {
+                EncryptionResultsText.Text = "Cannot be empty!";
+                EncryptionResultsText.ForeColor = Color.Red;
+            }
+
+            SuperTopSecreteEncryption crypt = new SuperTopSecreteEncryption();
+
+
+            try
+            {
+
+               EncryptionResultsText.Text =  crypt.Encrypt(EncryptionTextbox.Text);
+            } catch (Exception)
+            {
+                EncryptionResultsText.Text = "Encryption failed!";
+                EncryptionResultsText.ForeColor = Color.Red;
+            }
+
+        }
+
+
+        protected void handleDecrypt(object sender, EventArgs e)
+        {
+            // okay so encrypt the text and make it appear on the screen
+            if (EncryptionTextbox.Text == "")
+            {
+                EncryptionResultsText.Text = "Cannot be empty!";
+                EncryptionResultsText.ForeColor = Color.Red;
+            }
+
+            SuperTopSecreteEncryption crypt = new SuperTopSecreteEncryption();
+
+
+            try
+            {
+
+               EncryptionResultsText.Text =  crypt.Decrypt(EncryptionTextbox.Text);
+            } catch (Exception)
+            {
+                EncryptionResultsText.Text = "Decryption failed!";
+                EncryptionResultsText.ForeColor = Color.Red;
+            }
+
+        }
+
+
+
     }
 }

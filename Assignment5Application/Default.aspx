@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>Day Starter App</h1>
         <p class="lead">Day starter allows members to get their day started by allowing them to look up weather data, look up stock prices, find news articles and more. Register today</p>
-        <p><a href="Protected/Members.aspx" class="btn btn-primary btn-lg">Member Page</a>
+        <p><a href="Member.aspx" class="btn btn-primary btn-lg">Member Page</a>
             <a href="Login.aspx" class="btn btn-primary btn-lg">Member Login</a>
 
         </p>

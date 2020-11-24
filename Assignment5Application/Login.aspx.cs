@@ -107,7 +107,7 @@ namespace Assignment5Application
                 FormsAuthentication.RedirectFromLoginPage(Login1.UserName, Login1.RememberMeSet);
 
                 // Redirect the user to the right page
-                Response.Redirect("Protected/Member.aspx");
+                Response.Redirect("~/Member.aspx");
             } else
             {
                 e.Authenticated = false;

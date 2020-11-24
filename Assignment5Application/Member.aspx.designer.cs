@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assignment5Application.Protected
+namespace Assignment5Application
 {
 
 
-    public partial class Members
+    public partial class Member
     {
 
         /// <summary>
@@ -139,5 +139,41 @@ namespace Assignment5Application.Protected
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label theNewsLabel;
+
+        /// <summary>
+        /// EncryptionTextbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox EncryptionTextbox;
+
+        /// <summary>
+        /// EncryptText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button EncryptText;
+
+        /// <summary>
+        /// DecryptText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button DecryptText;
+
+        /// <summary>
+        /// EncryptionResultsText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label EncryptionResultsText;
     }
 }

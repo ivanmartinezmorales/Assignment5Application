@@ -1,12 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Members.aspx.cs" Inherits="Assignment5Application.Protected.Members" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Member.aspx.cs" Inherits="Assignment5Application.Member" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
     <div class ="container">
         <div class ="row">
             <div class="jumbotron col-lg-12">
-                <h1>Hi, <asp:LoginName runat="server" CssClass="username" />, welcome to the members page</h1>
                 
-            </div>
+                Welcome to the member page!</div>
         </div>
         <div class ="row">
             <div class="col-lg-4">
@@ -66,6 +65,20 @@
                     <asp:Button ID="getLocalNews" runat="server" OnClick="SubmitButton_Click4" Text="Search" class="btn btn-info  " />
                 <h4>
                     <asp:label ID="theNewsLabel" runat="server"></asp:label>
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class ="text-center col-xs-12">
+                <h1>Encryption/Decryption</h1>
+                <h3>Encrypt and decrypt passwords!</h3>
+                <br />                
+                    <asp:TextBox ID="EncryptionTextbox" runat="server" class="form-control center-block"></asp:TextBox>
+                <br /> 
+                    <asp:Button ID="EncryptText" runat="server" OnClick="handleEncrypt" Text="Encrpyt" class="btn btn-info  " />
+                    <asp:Button ID="DecryptText" runat="server" OnClick="handleDecrypt" Text="Decrypt" class="btn btn-info  " />
+                <h4>
+                    <asp:label ID="EncryptionResultsText" runat="server"></asp:label>
                 </h4>
             </div>
         </div>

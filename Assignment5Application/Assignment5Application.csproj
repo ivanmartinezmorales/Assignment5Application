@@ -114,6 +114,16 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\ImageService\Service.wsdl" />
+    <None Include="Connected Services\ImageService\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ImageService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ImageService\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\ivanService\configuration91.svcinfo" />
     <None Include="Connected Services\ivanService\configuration.svcinfo" />
     <None Include="Connected Services\ivanService\Reference.svcmap">
@@ -150,9 +160,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Login.aspx" />
-    <Content Include="Protected\.editorconfig" />
-    <Content Include="Protected\Members.aspx" />
-    <Content Include="Protected\Web.config" />
+    <Content Include="Member.aspx" />
     <Content Include="Accounts\Web.config" />
     <None Include="Connected Services\chrisService\Service1.wsdl" />
     <None Include="Connected Services\chrisService\Service1.xsd">
@@ -226,6 +234,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ImageService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ivanService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -269,14 +282,14 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Protected\Members.aspx.cs">
-      <DependentUpon>Members.aspx</DependentUpon>
+    <Compile Include="Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Protected\Members.aspx.designer.cs">
-      <DependentUpon>Members.aspx</DependentUpon>
+    <Compile Include="Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -335,13 +348,11 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\chrisService\" />
+    <WCFMetadataStorage Include="Connected Services\ImageService\" />
     <WCFMetadataStorage Include="Connected Services\ivanService\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ImageService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
