@@ -3,22 +3,33 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>Day Starter</h1>
+        <h1>Day Starter App</h1>
         <p class="lead">Day starter allows members to get their day started by allowing them to look up weather data, look up stock prices, find news articles and more. Register today</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Member Page</a> <a href="http://www.asp.net" class="btn btn-primary btn-lg">Member Login</a> </p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Staff Page</a> <a href="http://www.asp.net" class="btn btn-primary btn-lg">Staff Login</a> </p>
+        <p><a href="Protected/Members.aspx" class="btn btn-primary btn-lg">Member Page</a>
+            <a href="Login.aspx" class="btn btn-primary btn-lg">Member Login</a>
+
+        </p>
+        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Staff Page</a>
+            <a href="StaffLogin.aspx" class="btn btn-primary btn-lg">Staff Login</a>
+
+        </p>
+        <p>Don&#39;t have an account? Register today by clicking the button below.</p>
+        <p>
+            <a href="Register.aspx" class="btn btn-primary btn-lg">Register Here!</a></p>
     </div>
 
     <div class="row">
         <div class="col-md-4">
             <h2>Table of Components</h2>
+            <p>Group 8, Team of 2. Ivan Martinez Morales and Christopher Canales</p>
+            <p>This website is deployed at http://webstrar8.fulton.asu.edu/Default.aspx</p>
             <p>
                 &nbsp;<table class="nav-justified">
                     <tr>
-                        <td>Provider Name</td>
-                        <td>Page and Component</td>
-                        <td>Component Description</td>
-                        <td>Actual resources and methods used to implement this component</td>
+                        <th>Provider Name</th>
+                        <th>Page and Component</th>
+                        <th>Component Description</th>
+                        <th>Actual resources and methods used to implement this component</th>
                     </tr>
                     <tr>
                         <td>Ivan Martinez Morales</td>
