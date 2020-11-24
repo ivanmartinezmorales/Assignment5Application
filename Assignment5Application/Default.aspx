@@ -9,7 +9,7 @@
             <a href="Login.aspx" class="btn btn-primary btn-lg">Member Login</a>
 
         </p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Staff Page</a>
+        <p><a href="Staff.aspx" class="btn btn-primary btn-lg">Staff Page</a>
             <a href="StaffLogin.aspx" class="btn btn-primary btn-lg">Staff Login</a>
 
         </p>
@@ -54,6 +54,18 @@
                         <td>DLL</td>
                         <td>Hashing function: Input string: Output: String</td>
                         <td>Use library class and local component to iplement this library function.It is also used to save data to an XML file.</td>
+                    </tr>
+                    <tr>
+                        <td>Christopher Canales</td>
+                        <td>Member</td>
+                        <td>added all member services</td>
+                        <td>Using previous project, connected member aspx page to services</td>
+                    </tr>
+                    <tr>
+                        <td>Christopher Canales</td>
+                        <td>Staff</td>
+                        <td>added all Staff services</td>
+                        <td>Using previous project, connected staff aspx page to services</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
